@@ -30,8 +30,6 @@ Funcionalidades:
 * verifica se o associado já embarcou
 
 
-login
-
 <p float="left">
   <img align = 'center' src="https://github.com/DavidCabral/TransporteApp/blob/main/images/mobile/login.jpg?raw=true" alt="David Cabral" width="150" height="350">
   <img align = 'center' src="https://github.com/DavidCabral/TransporteApp/blob/main/images/mobile/main.jpg?raw=true" alt="David Cabral" width="150" height="350">
