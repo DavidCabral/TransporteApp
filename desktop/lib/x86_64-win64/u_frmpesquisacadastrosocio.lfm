@@ -1,0 +1,106 @@
+inherited frmpesquisacadastroSocio: TfrmpesquisacadastroSocio
+  Left = 405
+  Height = 345
+  Top = 383
+  Width = 1227
+  ClientHeight = 345
+  ClientWidth = 1227
+  OnShow = FormShow
+  inherited Panel1: TPanel
+    Width = 1227
+    ClientWidth = 1227
+    inherited btnEditar: TSpeedButton
+      OnClick = btnEditarClick
+    end
+    inherited btnExcluir: TSpeedButton
+      OnClick = btnExcluirClick
+    end
+    inherited btnSair: TSpeedButton
+      Left = 1193
+    end
+  end
+  inherited DBGrid1: TDBGrid
+    Height = 292
+    Width = 1227
+    Columns = <    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'CPF'
+        Width = 100
+        FieldName = 'CPF'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Nome'
+        Width = 300
+        FieldName = 'NOME'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Ativo'
+        Width = 40
+        FieldName = 'ATIVO'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Endereço'
+        Width = 300
+        FieldName = 'ENDERECO'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Fone'
+        Width = 90
+        FieldName = 'FONE'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'E-mail'
+        Width = 200
+        FieldName = 'EMAIL'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Dt. Cadastro'
+        Width = 90
+        FieldName = 'DATA_CADASTRAMENTO'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Curso'
+        Width = 200
+        FieldName = 'DES_CURSO'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Instituição'
+        Width = 200
+        FieldName = 'DES_INSTITUICAO'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Mensalidade'
+        Width = 200
+        FieldName = 'DES_MENSALIDADE'
+      end>
+  end
+  inherited statusBar: TStatusBar
+    Top = 322
+    Width = 1227
+  end
+  inherited DSGrid: TDataSource
+    DataSet = DtmCadastroSocio.qryPesquisa
+    left = 904
+    top = 0
+  end
+end

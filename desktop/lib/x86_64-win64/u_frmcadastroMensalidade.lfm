@@ -1,0 +1,148 @@
+inherited frmcadastroMensalidade: TfrmcadastroMensalidade
+  Height = 419
+  Width = 437
+  Caption = 'Cadastro de Mensalidade'
+  ClientHeight = 419
+  ClientWidth = 437
+  KeyPreview = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  inherited Panel1: TPanel
+    Width = 437
+    ClientWidth = 437
+    TabStop = True
+    inherited btnIncluir: TSpeedButton
+      Hint = 'Nova Mensalidade'
+      Width = 28
+      OnClick = btnIncluirClick
+    end
+    inherited btnSalvar: TSpeedButton
+      Left = 29
+      Width = 33
+      OnClick = btnSalvarClick
+    end
+    inherited btnPesquisar: TSpeedButton
+      Left = 90
+      Width = 28
+      OnClick = btnPesquisarClick
+    end
+    inherited btnSair: TSpeedButton
+      Left = 403
+    end
+    inherited btnCancelar: TSpeedButton
+      Left = 62
+      OnClick = btnCancelarClick
+    end
+  end
+  object Label1: TLabel[1]
+    Left = 44
+    Height = 15
+    Top = 64
+    Width = 38
+    Caption = 'Código'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel[2]
+    Left = 44
+    Height = 15
+    Top = 130
+    Width = 54
+    Caption = 'Descrição'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object edtCodigo: TEdit[3]
+    Left = 44
+    Height = 23
+    Top = 82
+    Width = 72
+    Alignment = taRightJustify
+    NumbersOnly = True
+    OnExit = edtCodigoExit
+    TabOrder = 1
+  end
+  object edtNome: TEdit[4]
+    Left = 44
+    Height = 23
+    Top = 146
+    Width = 344
+    Color = clInfoBk
+    Enabled = False
+    MaxLength = 60
+    TabOrder = 2
+  end
+  object cgIda: TCheckGroup[5]
+    Left = 44
+    Height = 185
+    Top = 197
+    Width = 100
+    AutoFill = True
+    Caption = '  Ida  '
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 165
+    ClientWidth = 96
+    Enabled = False
+    Font.Style = [fsBold]
+    Items.Strings = (
+      'Segunda'
+      'Terça'
+      'Quarta'
+      'Quinta'
+      'Sexta'
+      'Sábado'
+      'Domingo'
+    )
+    ParentFont = False
+    TabOrder = 3
+    Data = {
+      0700000002020202020202
+    }
+  end
+  object cgVolta: TCheckGroup[6]
+    Left = 288
+    Height = 185
+    Top = 197
+    Width = 100
+    AutoFill = True
+    Caption = '  Volta  '
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 165
+    ClientWidth = 96
+    Enabled = False
+    Font.Style = [fsBold]
+    Items.Strings = (
+      'Segunda'
+      'Terça'
+      'Quarta'
+      'Quinta'
+      'Sexta'
+      'Sábado'
+      'Domingo'
+    )
+    ParentFont = False
+    TabOrder = 4
+    Data = {
+      0700000002020202020202
+    }
+  end
+end

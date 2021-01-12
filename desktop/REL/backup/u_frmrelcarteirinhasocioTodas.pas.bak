@@ -1,0 +1,52 @@
+unit U_frmrelcarteirinhasocioTodas;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, ubarcodes, RLReport, RLBarcode, RLPDFFilter,
+  Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls, sqldb, U_DtmPrincipal;
+
+type
+
+  { TfrmrelcarteirinhasocioTodas }
+
+  TfrmrelcarteirinhasocioTodas = class(TForm)
+    qryGeral: TSQLQuery;
+    rlblCurso: TRLLabel;
+    rlblCurso1: TRLLabel;
+    rlblInstituicao: TRLLabel;
+    rlblInstituicao1: TRLLabel;
+    rlblNome: TRLLabel;
+    rlblNome1: TRLLabel;
+    RLDetailGrid1: TRLDetailGrid;
+    RLImage1: TRLImage;
+    RLImage3: TRLImage;
+    rlImgFoto: TRLImage;
+    rlimgqrcode: TRLImage;
+    RLLabel1: TRLLabel;
+    RLPanel1: TRLPanel;
+    RLPDFFilter1: TRLPDFFilter;
+    RLReport1: TRLReport;
+  private
+
+  public
+
+  end;
+
+var
+  frmrelcarteirinhasocioTodas: TfrmrelcarteirinhasocioTodas;
+
+implementation
+
+{$R *.lfm}
+
+
+{ TfrmrelcarteirinhasocioTodas }
+
+
+
+
+end.
+

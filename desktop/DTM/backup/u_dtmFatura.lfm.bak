@@ -1,0 +1,127 @@
+object DtmFatura: TDtmFatura
+  OldCreateOrder = False
+  Height = 147
+  HorizontalOffset = 524
+  VerticalOffset = 218
+  Width = 302
+  PPI = 96
+  object qryFatura: TSQLQuery
+    FieldDefs = <>
+    Database = DtmPrincipal.FBCon
+    Transaction = DtmPrincipal.FBTrans
+    Params = <>
+    left = 40
+    top = 24
+  end
+  object qryPesquisa: TSQLQuery
+    FieldDefs = <>
+    Database = DtmPrincipal.FBCon
+    Transaction = DtmPrincipal.FBTrans
+    Params = <>
+    left = 120
+    top = 24
+    object qryPesquisaCOD_FATURA: TLongintField
+      FieldKind = fkData
+      FieldName = 'COD_FATURA'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object qryPesquisaMesAno: TStringField
+      FieldKind = fkData
+      FieldName = 'MesAno'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object qryPesquisaCPF: TStringField
+      FieldKind = fkData
+      FieldName = 'CPF'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object qryPesquisaCOD_COBRANCA: TLongintField
+      FieldKind = fkData
+      FieldName = 'COD_COBRANCA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object qryPesquisaDATA_GERACAO: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'DATA_GERACAO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+    object qryPesquisaDATA_PAGAMENTO: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'DATA_PAGAMENTO'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPesquisaVENCIMENTO: TDateField
+      FieldKind = fkData
+      FieldName = 'VENCIMENTO'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPesquisaVALOR: TBCDField
+      FieldKind = fkData
+      FieldName = 'VALOR'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '###,###,##0.00'
+      Precision = 18
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+    end
+    object qryPesquisaMES: TLongintField
+      FieldKind = fkData
+      FieldName = 'MES'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+      DisplayFormat = '00'
+    end
+    object qryPesquisaANO: TLongintField
+      FieldKind = fkData
+      FieldName = 'ANO'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+    end
+  end
+end

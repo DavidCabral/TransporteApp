@@ -1,0 +1,178 @@
+inherited frmpesquisacadastroMensalidade: TfrmpesquisacadastroMensalidade
+  Left = 573
+  Top = 266
+  Width = 775
+  Caption = 'Pesquisa de Mensalidade'
+  ClientWidth = 775
+  OnShow = FormShow
+  inherited Panel1: TPanel
+    Width = 775
+    ClientWidth = 775
+    inherited btnEditar: TSpeedButton
+      OnClick = btnEditarClick
+    end
+    inherited btnExcluir: TSpeedButton
+      OnClick = btnExcluirClick
+    end
+    inherited btnSair: TSpeedButton
+      Left = 741
+    end
+    inherited edtPesquisa: TEdit
+      Left = 208
+      Width = 344
+    end
+  end
+  inherited DBGrid1: TDBGrid
+    Width = 775
+    Columns = <    
+      item
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Código'
+        FieldName = 'CODIGO'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Descrição'
+        Width = 200
+        FieldName = 'NOME'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Segunda Ida'
+        Width = 90
+        FieldName = 'SEG_IDA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Segunda Volta'
+        Width = 90
+        FieldName = 'SEG_VOLTA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Terça ida'
+        Width = 90
+        FieldName = 'TER_IDA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Terça Volta'
+        Width = 90
+        FieldName = 'TER_VOLTA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Quarta ida'
+        Width = 90
+        FieldName = 'QUA_IDA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Quarta Volta'
+        Width = 90
+        FieldName = 'QUA_VOLTA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Quinta Ida'
+        Width = 90
+        FieldName = 'QUI_IDA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Quinta Volta'
+        Width = 90
+        FieldName = 'QUI_VOLTA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Sexta ida'
+        Width = 90
+        FieldName = 'SEX_IDA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Sexta Volta'
+        Width = 90
+        FieldName = 'SEX_VOLTA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Sábado ida'
+        Width = 90
+        FieldName = 'SAB_IDA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Sábado Volta'
+        Width = 90
+        FieldName = 'SAB_VOLTA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Domingo ida'
+        Width = 90
+        FieldName = 'DOM_IDA'
+      end    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Domingo Volta'
+        Width = 90
+        FieldName = 'DOM_VOLTA'
+      end>
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+  end
+  inherited statusBar: TStatusBar
+    Width = 775
+  end
+  inherited DSGrid: TDataSource
+    DataSet = dtmcadastroMensalidade.qryPesquisa
+    left = 424
+    top = 64
+  end
+end

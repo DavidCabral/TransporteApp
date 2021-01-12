@@ -1,0 +1,43 @@
+object DtmCadastroCurso: TDtmCadastroCurso
+  OldCreateOrder = False
+  Height = 147
+  HorizontalOffset = 732
+  VerticalOffset = 234
+  Width = 302
+  PPI = 96
+  object qryCurso: TSQLQuery
+    FieldDefs = <>
+    Database = DtmPrincipal.FBCon
+    Transaction = DtmPrincipal.FBTrans
+    Params = <>
+    left = 40
+    top = 24
+  end
+  object qryPesquisa: TSQLQuery
+    FieldDefs = <>
+    Database = DtmPrincipal.FBCon
+    Transaction = DtmPrincipal.FBTrans
+    Params = <>
+    left = 120
+    top = 24
+    object qryPesquisaCODIGO: TLongintField
+      FieldKind = fkData
+      FieldName = 'CODIGO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPesquisaNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+  end
+end

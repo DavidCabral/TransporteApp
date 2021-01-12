@@ -1,0 +1,214 @@
+object FrmRelatorioBase: TFrmRelatorioBase
+  Left = 22
+  Height = 745
+  Top = 125
+  Width = 1263
+  HorzScrollBar.Page = 994
+  VertScrollBar.Page = 745
+  AutoScroll = True
+  Caption = 'FrmRelatorioBase'
+  ClientHeight = 745
+  ClientWidth = 1246
+  OnCreate = FormCreate
+  LCLVersion = '1.8.4.0'
+  object RLReport1: TRLReport
+    Left = 200
+    Height = 1123
+    Top = 64
+    Width = 794
+    DataSource = DSRel
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    RealBounds.Left = 0
+    RealBounds.Top = 0
+    RealBounds.Width = 0
+    RealBounds.Height = 0
+    object rlBandCabecalho: TRLBand
+      Left = 38
+      Height = 152
+      Top = 38
+      Width = 718
+      BandType = btHeader
+      Borders.Sides = sdCustom
+      Borders.DrawLeft = False
+      Borders.DrawTop = False
+      Borders.DrawRight = False
+      Borders.DrawBottom = True
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      object RlImg1: TRLImage
+        Left = 0
+        Height = 151
+        Top = 0
+        Width = 136
+        Align = faLeft
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Stretch = True
+      end
+      object RlImg2: TRLImage
+        Left = 582
+        Height = 151
+        Top = 0
+        Width = 136
+        Align = faRight
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Stretch = True
+      end
+      object rlbl_CabeTitulo: TRLLabel
+        Left = 287
+        Height = 24
+        Top = 16
+        Width = 144
+        Alignment = taCenter
+        Font.Color = clBlack
+        Font.Height = -21
+        Font.Name = 'Arial'
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object rlbl_CabeLinha1: TRLLabel
+        Left = 299
+        Height = 18
+        Top = 51
+        Width = 120
+        Alignment = taCenter
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Arial'
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object rlbl_CabeLinha3: TRLLabel
+        Left = 299
+        Height = 18
+        Top = 105
+        Width = 120
+        Alignment = taCenter
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Arial'
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object rlbl_CabeLinha2: TRLLabel
+        Left = 299
+        Height = 18
+        Top = 78
+        Width = 120
+        Alignment = taCenter
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Arial'
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+    end
+    object rlBandTitulo: TRLBand
+      Left = 38
+      Height = 37
+      Top = 190
+      Width = 718
+      BandType = btTitle
+      Borders.Sides = sdCustom
+      Borders.DrawLeft = False
+      Borders.DrawTop = False
+      Borders.DrawRight = False
+      Borders.DrawBottom = True
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      object RlblTitulo: TRLLabel
+        Left = 298
+        Height = 32
+        Top = 2
+        Width = 122
+        Align = faCenter
+        Alignment = taCenter
+        Font.Color = clBlack
+        Font.Height = -27
+        Font.Name = 'Arial'
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+    end
+    object rlBandFooter: TRLBand
+      Left = 38
+      Height = 20
+      Top = 227
+      Width = 718
+      BandType = btFooter
+      Borders.Sides = sdCustom
+      Borders.DrawLeft = False
+      Borders.DrawTop = True
+      Borders.DrawRight = False
+      Borders.DrawBottom = False
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      object RLSystemInfo1: TRLSystemInfo
+        Left = 681
+        Height = 19
+        Top = 1
+        Width = 37
+        Align = faRight
+        Alignment = taRightJustify
+        Info = itNow
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+    end
+  end
+  object RLPDFFilter1: TRLPDFFilter
+    DocumentInfo.Creator = 'FortesReport Community Edition v4.0 \251 Copyright © 1999-2016 Fortes Informática'
+    DisplayName = 'Documento PDF'
+    left = 584
+    top = 15
+  end
+  object RLXLSXFilter1: TRLXLSXFilter
+    Options = [xfoFindValueCells, xfoOneSheetPerPage]
+    DisplayName = 'Planilha Excel'
+    left = 648
+    top = 16
+  end
+  object DSRel: TDataSource
+    DataSet = QryRel
+    left = 456
+    top = 24
+  end
+  object QryRel: TSQLQuery
+    FieldDefs = <>
+    Database = DtmPrincipal.FBCon
+    Transaction = DtmPrincipal.FBTrans
+    Params = <>
+    left = 384
+    top = 24
+  end
+end

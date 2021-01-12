@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0070b3</color>
+    <color name="colorPrimaryDark">#015C92</color>
+    <color name="colorAccent">#013655</color>
+
+    <color name="white">#fafdfd</color>
+    <color name="black">#585858</color>
+    <color name="gray">#FAFAFA</color>
+    <color name="gray2">#d4d4d4</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="viagem">#295484</color>
+    <color name="label_viagem">#c3d7ec</color>
+    <color name="inativo">#F44336</color>
+    <color name="remover">#FFEB3B</color>
+    <color name="obs">#F3B0B0</color>
+    <color name="verde">#4CAF50</color>
+
+    <array name="cores">
+        <item>#FF9800</item>
+        <item>#F44336</item>
+    </array>
+
+</resources>

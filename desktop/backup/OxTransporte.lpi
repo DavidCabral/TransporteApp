@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <AutoCreateForms Value="False"/>
+      <Title Value="Assec"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes Count="2">
+      <Item1 Name="Debug" Default="True"/>
+      <Item2 Name="Final">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="C:\Assec\Assec"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="FRM;DTM;UNT;MODEL;REL"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item2>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default"/>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="6">
+      <Item1>
+        <PackageName Value="MemDSLaz"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LazControls"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="lazbarcodes"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="frce"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="FCL"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="LCL"/>
+      </Item6>
+    </RequiredPackages>
+    <Units Count="37">
+      <Unit0>
+        <Filename Value="OxTransporte.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="FRM\u_frmprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmPrincipal"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="DTM\u_dtmprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DtmPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="U_DtmPrincipal"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="FRM\U_FrmCadastroBase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCadastroBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="FRM\u_frmcadastrocurso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCadastroCurso"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmCadastroCurso"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="FRM\u_frmpesquisabase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPesquisaBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmPesquisaBase"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="DTM\u_dtmcadastrocurso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DtmCadastroCurso"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="U_DtmCadastroCurso"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="UNT\u_utils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="U_Utils"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="FRM\u_frmpesquisacadastrocurso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPesquisaCadastroCurso"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmPesquisaCadastroCurso"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="MODEL\u_curso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="U_Curso"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="MODEL\u_instituicao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="U_Instituicao"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="FRM\u_frmcadastroinstituicao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmcadastroinstituicao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_frmcadastroinstituicao"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="FRM\u_frmpesquisainstituicao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPesquisaInstituicao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmPesquisaInstituicao"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="DTM\u_dtmcadastroInstituicao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dtmcadastroInstituicao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="U_dtmcadastroInstituicao"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="FRM\u_frmpesquisacadastroInstituicao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmpesquisacadastroInstituicao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_frmpesquisacadastroInstituicao"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="MODEL\u_mensalidade.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="U_Mensalidade"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="DTM\u_dtmcadastroMensalidade.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dtmcadastroMensalidade"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="U_dtmcadastroMensalidade"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="FRM\u_frmcadastroMensalidade.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmcadastroMensalidade"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_frmcadastroMensalidade"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="FRM\u_frmpesquisacadastroMensalidade.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmpesquisacadastroMensalidade"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_frmpesquisacadastroMensalidade"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="REL\u_frmrelatoriobase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmRelatorioBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmRelatorioBase"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="REL\u_frmlistagemcurso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmListagemCurso"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmListagemCurso"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="MODEL\u_socio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="U_Socio"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="FRM\u_frmcadastrosocio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCadastroSocio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmCadastroSocio"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="DTM\u_dtmcadastrosocio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DtmCadastroSocio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="U_DtmCadastroSocio"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="REL\u_frmrelcarteitinhasocio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmRelCarteitinhaSocio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmRelCarteitinhaSocio"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="FRM\u_frmpesquisacadastrosocio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmpesquisacadastroSocio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_frmpesquisacadastroSocio"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="MODEL\u_fatura.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="U_Fatura"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="DTM\u_dtmFatura.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DtmFatura"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="U_DtmFatura"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="FRM\u_frmdlgincluiralterarfatura.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmDlgIncluirAlterarFatura"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmDlgIncluirAlterarFatura"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="REL\u_frmlistagemsocio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmListagemSocio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmListagemSocio"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="MODEL\u_viajem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="U_Viajem"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="FRM\u_frmprogress.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmProgress"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmProgress"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="REL\u_frmrelcarteirinhasocioTodas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmrelcarteirinhasocioTodas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_frmrelcarteirinhasocioTodas"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="REL\u_frmrelsociosinadimplentes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmRelSociosInadimplentes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmRelSociosInadimplentes"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="FRM\u_frmfiltrorelatoriobase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmFiltroRelatorioBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmFiltroRelatorioBase"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="FRM\u_frmfiltrorelsocioinadimplente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmFiltroRelSocioInadimplente"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="U_FrmFiltroRelSocioInadimplente"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="FRM\u_frmfiltrorelatoriocarteirinhas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmFiltroRelatorioCarteirinhas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="u_frmFiltroRelatorioCarteirinhas"/>
+      </Unit36>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="C:\Assec\Assec"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="FRM;DTM;UNT;MODEL;REL"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

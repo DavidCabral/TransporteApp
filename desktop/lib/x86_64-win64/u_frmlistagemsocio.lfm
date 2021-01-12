@@ -1,0 +1,95 @@
+inherited FrmListagemSocio: TFrmListagemSocio
+  Left = 426
+  Top = 135
+  Caption = 'FrmListagemSocio'
+  ClientWidth = 1246
+  OnCreate = FormCreate
+  inherited RLReport1: TRLReport
+    inherited rlBandFooter: TRLBand
+      Top = 384
+    end
+    object RLGroup1: TRLGroup[3]
+      Left = 38
+      Height = 139
+      Top = 245
+      Width = 718
+      DataFields = 'CPF'
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      BeforePrint = RLGroup1BeforePrint
+      object RLBand1: TRLBand
+        Left = 0
+        Height = 24
+        Top = 0
+        Width = 718
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLSubDetail1: TRLSubDetail
+        Left = 0
+        Height = 80
+        Top = 24
+        Width = 718
+        DataSource = DSDebito
+        Margins.LeftMargin = 50
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        object RLBand3: TRLBand
+          Left = 189
+          Height = 24
+          Top = 0
+          Width = 529
+          BandType = btColumnHeader
+          Color = clSkyBlue
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLBand4: TRLBand
+          Left = 189
+          Height = 24
+          Top = 24
+          Width = 529
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+      end
+    end
+    object RLBand2: TRLBand[4]
+      Left = 38
+      Height = 18
+      Top = 227
+      Width = 718
+      BandType = btColumnHeader
+      Color = clMoneyGreen
+      ParentColor = False
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      Transparent = False
+    end
+  end
+  object DSDebito: TDataSource[5]
+    DataSet = CDSDebito
+    left = 288
+    top = 24
+  end
+  object CDSDebito: TBufDataset[6]
+    PacketRecords = -1
+    FieldDefs = <>
+    left = 216
+    top = 24
+  end
+end

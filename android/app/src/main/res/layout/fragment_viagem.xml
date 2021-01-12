@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/frViagem"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.ViagemFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <noman.weekcalendar.WeekCalendar
+            android:id="@+id/weekCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viagemList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekCalendar" />
+
+        <io.github.kobakei.materialfabspeeddial.FabSpeedDial
+            android:id="@+id/fab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fab_fabBackgroundColor="@color/colorPrimary"
+            app:fab_fabDrawableTint="@color/white"
+            app:fab_menu="@menu/fab"
+            app:fab_miniFabBackgroundColor="@color/colorPrimaryDark"
+            app:fab_miniFabBackgroundColorList="@array/cores"
+            app:fab_miniFabDrawableTint="@color/white"
+            app:fab_miniFabTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,3 @@
+inherited FrmPesquisaInstituicao: TFrmPesquisaInstituicao
+  Caption = 'Pesquisa de Instituição'
+end

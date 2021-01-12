@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp"
+            android:layout_weight="4"
+            app:srcCompat="@drawable/placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txNome"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:fontFamily="sans-serif"
+                android:gravity="fill_vertical"
+                android:text="xablau"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txCurso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="curso"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txInstituicao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="instituicao"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txEmbarque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="instituicao"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

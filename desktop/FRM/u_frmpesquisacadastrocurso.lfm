@@ -1,0 +1,43 @@
+inherited FrmPesquisaCadastroCurso: TFrmPesquisaCadastroCurso
+  Left = 687
+  Top = 258
+  Caption = 'Pesquisa de Curso'
+  OnShow = FormShow
+  inherited Panel1: TPanel
+    inherited btnEditar: TSpeedButton
+      OnClick = btnEditarClick
+    end
+    inherited btnExcluir: TSpeedButton
+      OnClick = btnExcluirClick
+    end
+    inherited btnListar: TSpeedButton
+      OnClick = btnListarClick
+    end
+    inherited edtPesquisa: TEdit
+      Left = 187
+      Width = 277
+    end
+  end
+  inherited DBGrid1: TDBGrid
+    Columns = <    
+      item
+        Alignment = taRightJustify
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Código'
+        FieldName = 'CODIGO'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Descrição'
+        Width = 400
+        FieldName = 'NOME'
+      end>
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+  end
+  inherited DSGrid: TDataSource
+    DataSet = DtmCadastroCurso.qryPesquisa
+  end
+end

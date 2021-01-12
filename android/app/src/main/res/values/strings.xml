@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">ASSEC</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastra_se">CADASTRA-SE</string>
+    <string name="nome">NOME</string>
+    <string name="nome_completo">Digite seu nome completo</string>
+    <string name="nome_fantasia">NOME FANTASIA</string>
+    <string name="digite_um_nome_de_exibi_o">Digite um nome de exibição</string>
+    <string name="email">EMAIL</string>
+    <string name="digite_seu_email">Digite seu email</string>
+    <string name="fone">FONE</string>
+    <string name="senha">Pelo menos 6 caracteres</string>
+    <string name="crie_sua_senha">CRIE SUA SENHA</string>
+    <string name="comece_a_usar">COMECE A USAR</string>
+    <string name="termos">Ao inscrever-se você concorda com os nossos</string>
+    <string name="termos_de_servi_o_e_pol_tica_de_privacidade">Termos de Serviço e Política de Privacidade</string>
+    <string name="logo">logo</string>
+    <string name="usuario">USUÁRIO</string>
+    <string name="login">LOGIN</string>
+    <string name="pass">SENHA</string>
+    <string name="informe_o_login">Informe o login</string>
+    <string name="informe_a_senha">Informe a senha</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="esqueci_a_senha">Esqueci a senha</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="sat">Sab</string>
+    <string name="sun">Dom</string>
+    <string name="mon">Seg</string>
+    <string name="tue">Ter</string>
+    <string name="wed">Qua</string>
+    <string name="thu">Qui</string>
+    <string name="fri">Sex</string>
+    <string name="socioEmpty">Nenhum Socio Cadastrado</string>
+    <string name="debitosEmpty">Sem Débitos</string>
+    <string name="fone2">FONE2</string>
+    <string name="endere_o">Endereço</string>
+    <string name="instituicao">Instituicao</string>
+    <string name="curso">Curso</string>
+    <string name="mensalidade">Mensalidade</string>
+    <string name="inativo">Inativo</string>
+    <string name="ativo">Ativo</string>
+    <string name="situacao">Situacao</string>
+    <string name="cpf">CPF</string>
+    <string name="nome2">Nome</string>
+    <string name="back">back</string>
+    <string name="pagamento">Pagamento</string>
+    <string name="associados">Associados</string>
+    <string name="ida">IDA</string>
+    <string name="volta">VOLTA</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="qrcode">QRCode</string>
+    <string name="validade">Validade</string>
+
+
+</resources>

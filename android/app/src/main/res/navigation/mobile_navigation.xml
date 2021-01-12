@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.oxente.transp.ui.fragments.LoginFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_principalFragment"
+            app:destination="@id/principalFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="br.com.oxente.transp.ui.fragments.PrincipalFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principalFragment_to_viagemFragment"
+            app:destination="@id/viagemFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_principalFragment_to_associadoFragment"
+            app:destination="@id/associadoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_principalFragment_to_pagamentoFragment"
+            app:destination="@id/pagamentoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_principalFragment_to_ataFragment"
+            app:destination="@id/ataFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/viagemFragment"
+        android:name="br.com.oxente.transp.ui.fragments.ViagemFragment"
+        android:label="Viagem de {title}"
+        tools:layout="@layout/fragment_viagem" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="tipo_viagem"
+            app:argType="integer"
+            android:defaultValue="0" />
+       />
+    </fragment>
+    <fragment
+        android:id="@+id/associadoFragment"
+        android:name="br.com.oxente.transp.ui.fragments.AssociadoFragment"
+        android:label="Associados"
+        tools:layout="@layout/fragment_associado" >
+        <action
+            android:id="@+id/action_associadoFragment_to_socioDetailFragment"
+            app:destination="@id/socioDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagamentoFragment"
+        android:name="br.com.oxente.transp.ui.fragments.PagamentoFragment"
+        android:label="Pagamentos"
+        tools:layout="@layout/fragment_pagamento" />
+    <fragment
+        android:id="@+id/ataFragment"
+        android:name="br.com.oxente.transp.ui.fragments.AtaFragment"
+        android:label="ATA"
+        tools:layout="@layout/fragment_ata" />
+    <fragment
+        android:id="@+id/socioDetailFragment"
+        android:name="br.com.oxente.transp.ui.fragments.SocioDetailFragment"
+        android:label="Associado"
+        tools:layout="@layout/fragment_socio_detail">
+
+        <argument
+            android:name="cpf"
+            app:argType="string" />
+    </fragment>
+</navigation>

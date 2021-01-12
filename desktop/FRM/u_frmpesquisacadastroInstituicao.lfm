@@ -1,0 +1,77 @@
+inherited frmpesquisacadastroInstituicao: TfrmpesquisacadastroInstituicao
+  Left = 668
+  Top = 301
+  Width = 723
+  Caption = 'Pesquisa de Curso'
+  ClientWidth = 723
+  OnShow = FormShow
+  inherited Panel1: TPanel
+    Width = 723
+    ClientWidth = 723
+    inherited btnEditar: TSpeedButton
+      OnClick = btnEditarClick
+    end
+    inherited btnExcluir: TSpeedButton
+      OnClick = btnExcluirClick
+    end
+    inherited btnListar: TSpeedButton
+      OnClick = btnListarClick
+    end
+    inherited btnSair: TSpeedButton
+      Left = 689
+    end
+    inherited edtPesquisa: TEdit
+      Left = 196
+      Width = 317
+    end
+  end
+  inherited DBGrid1: TDBGrid
+    Width = 723
+    Columns = <    
+      item
+        Alignment = taRightJustify
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Código'
+        Width = 64
+        FieldName = 'CODIGO'
+      end    
+      item
+        MaxSize = 20
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Sigla'
+        Width = 200
+        FieldName = 'SIGLA'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'Descrição'
+        Width = 400
+        FieldName = 'NOME'
+      end>
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+  end
+  inherited statusBar: TStatusBar
+    Width = 723
+    Panels = <    
+      item
+        Width = 300
+      end    
+      item
+        Width = 300
+      end    
+      item
+        Alignment = taCenter
+        Text = 'F1'
+        Width = 50
+      end>
+  end
+  inherited DSGrid: TDataSource
+    DataSet = dtmcadastroInstituicao.qryPesquisa
+    left = 640
+    top = 48
+  end
+end

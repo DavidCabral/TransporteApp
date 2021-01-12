@@ -1,0 +1,33 @@
+object FrmProgress: TFrmProgress
+  Left = 718
+  Height = 128
+  Top = 292
+  Width = 377
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'Aguarde'
+  ClientHeight = 128
+  ClientWidth = 377
+  Position = poMainFormCenter
+  LCLVersion = '1.8.4.0'
+  object pnlMensagem: TPanel
+    Left = 0
+    Height = 108
+    Top = 0
+    Width = 377
+    Align = alClient
+    Caption = 'pnlMensagem'
+    Font.Height = -13
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ProgressBar: TProgressBar
+    Left = 0
+    Height = 20
+    Top = 108
+    Width = 377
+    Align = alBottom
+    TabOrder = 1
+  end
+end

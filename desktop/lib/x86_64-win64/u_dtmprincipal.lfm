@@ -1,0 +1,43 @@
+object DtmPrincipal: TDtmPrincipal
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
+  OldCreateOrder = False
+  Height = 150
+  HorizontalOffset = 641
+  VerticalOffset = 428
+  Width = 589
+  PPI = 96
+  object FBCon: TIBConnection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Password = 'masterkey'
+    Transaction = FBTrans
+    UserName = 'SYSDBA'
+    CharSet = 'UTF8'
+    CheckTransactionParams = False
+    left = 72
+    top = 40
+  end
+  object FBTrans: TSQLTransaction
+    Active = False
+    Action = caCommitRetaining
+    Database = FBCon
+    Params.Strings = (
+      'isc_tpb_read_committed'
+      'isc_tpb_rec_version'
+      ''
+    )
+    Options = [stoExplicitStart]
+    left = 136
+    top = 40
+  end
+  object qryGeral: TSQLQuery
+    FieldDefs = <>
+    Database = FBCon
+    Transaction = FBTrans
+    Params = <>
+    left = 208
+    top = 40
+  end
+end

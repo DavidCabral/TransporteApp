@@ -1,0 +1,79 @@
+inherited FrmCadastroCurso: TFrmCadastroCurso
+  Height = 273
+  Width = 442
+  Caption = 'Cadastro de Curso'
+  ClientHeight = 273
+  ClientWidth = 442
+  KeyPreview = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  inherited Panel1: TPanel
+    Width = 442
+    ClientWidth = 442
+    TabStop = True
+    inherited btnIncluir: TSpeedButton
+      Width = 28
+      OnClick = btnIncluirClick
+    end
+    inherited btnSalvar: TSpeedButton
+      Left = 29
+      Width = 33
+      OnClick = btnSalvarClick
+    end
+    inherited btnPesquisar: TSpeedButton
+      Left = 90
+      Width = 28
+      OnClick = btnPesquisarClick
+    end
+    inherited btnSair: TSpeedButton
+      Left = 408
+    end
+    inherited btnCancelar: TSpeedButton
+      Left = 62
+      OnClick = btnCancelarClick
+    end
+  end
+  object Label1: TLabel[1]
+    Left = 54
+    Height = 15
+    Top = 91
+    Width = 38
+    Caption = 'Código'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel[2]
+    Left = 54
+    Height = 15
+    Top = 157
+    Width = 54
+    Caption = 'Descrição'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object edtCodigo: TEdit[3]
+    Left = 54
+    Height = 23
+    Top = 109
+    Width = 72
+    Alignment = taRightJustify
+    NumbersOnly = True
+    OnExit = edtCodigoExit
+    TabOrder = 1
+  end
+  object edtNome: TEdit[4]
+    Left = 54
+    Height = 23
+    Top = 173
+    Width = 344
+    Color = clInfoBk
+    Enabled = False
+    MaxLength = 60
+    TabOrder = 2
+  end
+end

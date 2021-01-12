@@ -1,0 +1,43 @@
+unit U_FrmCadastroCurso;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
+  Buttons;
+
+type
+
+  { TFrmCadastroCurso }
+
+  TFrmCadastroCurso = class(TForm)
+    Panel1: TPanel;
+    btnIncluir: TSpeedButton;
+    btnSalvar: TSpeedButton;
+    btnApagar: TSpeedButton;
+    btnSair: TSpeedButton;
+    procedure btnSairClick(Sender: TObject);
+  private
+
+  public
+
+  end;
+
+var
+  FrmCadastroCurso: TFrmCadastroCurso;
+
+implementation
+
+{$R *.lfm}
+
+{ TFrmCadastroCurso }
+
+procedure TFrmCadastroCurso.btnSairClick(Sender: TObject);
+begin
+  Self.Close;
+end;
+
+end.
+

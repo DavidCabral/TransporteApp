@@ -1,0 +1,196 @@
+object DtmCadastroSocio: TDtmCadastroSocio
+  OldCreateOrder = False
+  Height = 142
+  HorizontalOffset = 1291
+  VerticalOffset = 585
+  Width = 355
+  PPI = 96
+  object qrySocio: TSQLQuery
+    FieldDefs = <>
+    Database = DtmPrincipal.FBCon
+    Transaction = DtmPrincipal.FBTrans
+    Params = <>
+    left = 68
+    top = 52
+  end
+  object qryPesquisa: TSQLQuery
+    FieldDefs = <>
+    Database = DtmPrincipal.FBCon
+    Transaction = DtmPrincipal.FBTrans
+    Params = <>
+    left = 148
+    top = 52
+    object qryPesquisaNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object qryPesquisaCPF: TStringField
+      FieldKind = fkData
+      FieldName = 'CPF'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPesquisaENDERECO: TStringField
+      FieldKind = fkData
+      FieldName = 'ENDERECO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object qryPesquisaFONE: TStringField
+      FieldKind = fkData
+      FieldName = 'FONE'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object qryPesquisaFONE2: TStringField
+      FieldKind = fkData
+      FieldName = 'FONE2'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object qryPesquisaEMAIL: TStringField
+      FieldKind = fkData
+      FieldName = 'EMAIL'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object qryPesquisaDATA_CADASTRAMENTO: TDateField
+      FieldKind = fkData
+      FieldName = 'DATA_CADASTRAMENTO'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPesquisaATIVO: TStringField
+      FieldKind = fkData
+      FieldName = 'ATIVO'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object qryPesquisaDES_CURSO: TStringField
+      FieldKind = fkData
+      FieldName = 'DES_CURSO'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object qryPesquisaDES_MENSALIDADE: TStringField
+      FieldKind = fkData
+      FieldName = 'DES_MENSALIDADE'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object qryPesquisaDES_INSTITUICAO: TStringField
+      FieldKind = fkData
+      FieldName = 'DES_INSTITUICAO'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+  end
+  object qryPesquisaViajem: TSQLQuery
+    FieldDefs = <>
+    OnCalcFields = qryPesquisaViajemCalcFields
+    Database = DtmPrincipal.FBCon
+    Transaction = DtmPrincipal.FBTrans
+    Params = <>
+    left = 240
+    top = 52
+    object qryPesquisaViajemCPF: TStringField
+      FieldKind = fkData
+      FieldName = 'CPF'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPesquisaViajemDATA: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'DATA'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPesquisaViajemTIPO: TLongintField
+      FieldKind = fkData
+      FieldName = 'TIPO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPesquisaViajemOBS: TLongintField
+      FieldKind = fkData
+      FieldName = 'OBS'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPesquisaViajemDESC_TIPO: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'DESC_TIPO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryPesquisaViajemDESC_OBS: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'DESC_OBS'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+end

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/qrcode"
+        android:title="@string/qrcode"
+        android:icon="@drawable/qrcode"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/pesquisaCPF"
+        android:title="@string/cpf"
+        android:icon="@drawable/ic_assignment_ind_black_24dp"
+        android:orderInCategory="2"/>
+</menu>
