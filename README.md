@@ -26,7 +26,7 @@ Imprimir Carteirinha
 
 Funcionalidades:
 * manter associados
-* ler o QRCODE da carteira e informa o associado
+* ler o QRCODE da carteira e informa os dados do associado
 * verifica se o associado já embarcou
 
 
